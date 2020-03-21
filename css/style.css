@@ -9,5 +9,19 @@
 .input_block {
   background-color: #ffffff;
   width: 100%;
-  height: 100px;
+  height: 125px;
+}
+.buttons_block {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.buttons_row {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.button {
+  width: 24%;
 }
