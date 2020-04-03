@@ -10,40 +10,39 @@
   <div class="container">
     <div class="input_block">
       <div class="inner_input_block">
-        <div id="upperValue">123</div>
-        <div id="result">260</div>
+        <div id="upperValue">-</div>
+        <div id="result"></div>
       </div>
     </div>
     <div class="buttons_block">
       <table>
         <tr>
-          <td>c</td>
-          <td>+-</td>
+          <td colspan="2" onclick="clea()">c</td>
           <td>%</td>
           <td>/</td>
         </tr>
         <tr>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>x</td>
+          <td onclick="addToInput(7)">7</td>
+          <td onclick="addToInput(8)">8</td>
+          <td onclick="addToInput(9)">9</td>
+          <td onclick="addToInput('*')">x</td>
         </tr>
         <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
-          <td>-</td>
+          <td onclick="addToInput(4)">4</td>
+          <td onclick="addToInput(5)">5</td>
+          <td onclick="addToInput(6)">6</td>
+          <td onclick="addToInput('-')">-</td>
         </tr>
         <tr>
-          <td>1</td>
-          <td>2</td>
-          <td>3</td>
-          <td>+</td>
+          <td onclick="addToInput(1)">1</td>
+          <td onclick="addToInput(2)">2</td>
+          <td onclick="addToInput(3)">3</td>
+          <td onclick="addToInput('+')">+</td>
         </tr>
         <tr>
-          <td colspan="2">0</td>
-          <td>,</td>
-          <td>=</td>
+          <td colspan="2" onclick="addToInput(0)">0</td>
+          <td onclick="addToInput(',')">,</td>
+          <td onclick="equally()">=</td>
         </tr>
       </table>
     </div>
